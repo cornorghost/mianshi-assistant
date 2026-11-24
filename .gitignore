@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.venv/
+.models/
+.protocol/
+artifacts/
+.env*
+.local-machine.json
+*.log
+__pycache__/
+*.pcap
+*.pcapng
+*.dmp
+speech-archive/
+bailian-key.bin
+# Local competitor diagnostics are not part of the application source release.
+scripts/rc-debug.cjs
+scripts/summarize-master-capture.cjs
+scripts/inspect-reference-asr.cjs
+scripts/inspect-master-memory.py
+scripts/inspect-master-log.cjs

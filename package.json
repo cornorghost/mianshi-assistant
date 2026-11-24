@@ -1,0 +1,24 @@
+{
+  "name": "chatbox",
+  "version": "0.6.6",
+  "private": true,
+  "license": "MIT",
+  "description": "chatbox · 本地 Codex 驱动的桌面应用",
+  "main": "src/main.cjs",
+  "scripts": {
+    "postinstall": "node node_modules/electron/install.js",
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs",
+    "check": "node --check src/main.cjs && node --check src/codex.cjs && node --check src/renderer.js && node --check src/speech.js && node --check src/speech-service.cjs && node --check src/bailian-speech.cjs && node --check src/credentials.cjs && node --check src/session-store.cjs && node --check src/codex-locator.cjs && node --check src/project-directory.cjs && node --check src/project-tools.cjs && node --check src/mouse-passthrough.cjs",
+    "pack": "node scripts/pack-desktop.cjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "45.4.1"
+  },
+  "dependencies": {
+    "https-proxy-agent": "^9.1.0",
+    "ws": "^8.23.0"
+  },
+  "productName": "chatbox"
+}
